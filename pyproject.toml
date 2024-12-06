@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "fastapi-app"
+version = "0.1.0"
+description = ""
+authors = ["Jimmy Liu <jmliu@yuansuan.cn>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.13"
+uvicorn = {version = "0.30.6", extras = ["standard"]}
+python-multipart = "^0.0.19"
+sqlalchemy = "^2.0.36"
+aiocache = "^0.12.3"
+aiohttp = "^3.11.9"
+requests = "^2.32.3"
+pydantic = "^2.10.3"
+fastapi = "^0.115.6"
+python-dotenv = "^1.0.1"
+python-jose = "^3.3.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+bcrypt = ">=4.0.0"
+ldap3 = "^2.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
